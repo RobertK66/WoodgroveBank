@@ -1,4 +1,5 @@
 using Orleans.Configuration;
+using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +10,7 @@ builder.AsOrleansSilo(silo =>
         options.SiloName = $"api_{Path.GetFileNameWithoutExtension(Path.GetRandomFileName())}");
 });
 
-builder.Services.AddOpenApi("WoodgroveApi");
+builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
@@ -18,9 +19,9 @@ app.UseStaticFiles();
 app.UseRouting();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+if (app.Environment.IsDevelopment()) {
     app.MapOpenApi();
+    app.MapScalarApiReference((x) => { x.Servers = []; });
 }
 
 app.MapCustomerEndpoints();
