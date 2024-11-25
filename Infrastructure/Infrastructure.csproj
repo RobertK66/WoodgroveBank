@@ -12,18 +12,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Orleans.Server" Version="8.2.0" />
-		<PackageReference Include="Microsoft.Orleans.Client" Version="8.2.0" />
+		<PackageReference Include="Microsoft.Orleans.Server" Version="9.0.1" />
+		<PackageReference Include="Microsoft.Orleans.Client" Version="9.0.1" />
 		<PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.22.0" />
-		<PackageReference Include="Microsoft.Orleans.Hosting.Kubernetes" Version="8.2.0" />
-		<PackageReference Include="Microsoft.Orleans.Persistence.AzureStorage" Version="8.2.0" />
-		<PackageReference Include="Microsoft.Orleans.Clustering.AzureStorage" Version="8.2.0" />
+		<PackageReference Include="Microsoft.Orleans.Hosting.Kubernetes" Version="9.0.1" />
+		<PackageReference Include="Microsoft.Orleans.Persistence.AzureStorage" Version="9.0.1" />
+		<PackageReference Include="Microsoft.Orleans.Clustering.AzureStorage" Version="9.0.1" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.0" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Http" Version="9.0.0" />
-		<PackageReference Include="Microsoft.Orleans.Streaming" Version="8.2.0" />
-		<PackageReference Include="Aspire.Azure.Data.Tables" Version="9.0.0" />
-		<PackageReference Include="Aspire.Azure.Storage.Blobs" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Orleans.Streaming" Version="9.0.1" />
+		<PackageReference Include="Aspire.Azure.Data.Tables" Version="9.1.0-preview.1.24575.1" />
+		<PackageReference Include="Aspire.Azure.Storage.Blobs" Version="9.1.0-preview.1.24575.1" />
 	</ItemGroup>
 
 </Project>
